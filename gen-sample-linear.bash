@@ -1,6 +1,8 @@
-rm -f /tmp/gpl-*.txt
+
+# del old
+rm -f /tmp/sample-*.txt
 
 for i in {1..30}
 do
-    cat /dev/random | tr -dc 'abcde[:blank:]' | head -c $((i*1024*32)) >/tmp/gpl-$i.txt
+    cat /dev/random | tr -dc 'abcde[= =]' | head -c $((i*1024*32)) >/tmp/sample-$i.txt
 done

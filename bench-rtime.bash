@@ -6,7 +6,7 @@ function bench_rtime() {
     TIMEFORMAT=%R
 
     what_lib=$1
-    echo "benching $what_lib..."
+    echo "rtime benching $what_lib..."
     
     realtimes_result="rtime-use_$what_lib.log"
     if [[ -e $realtimes_result ]]

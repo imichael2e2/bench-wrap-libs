@@ -9,7 +9,7 @@ set key inside left
 set key textcolor variable
 
 set ylabel "Time(seconds)"
-set xlabel "Input Size(3085000 * x Bytes)"
+set xlabel "Input Size(32768 * x Bytes)"
 
 
 plot \

@@ -4,7 +4,7 @@ N_SAMPLE=30
 
 function bench_mempeak() {
     what_lib="$1"
-    echo "benching $what_lib..."
+    echo "mem benching $what_lib..."
 
     mempeak_result="mempeak-use_$what_lib.log"
     
@@ -16,7 +16,7 @@ function bench_mempeak() {
     for i in $(seq 1 $N_SAMPLE)
     do
 	sleep 1s;
-	cat /tmp/gpl-$i.txt | LD_LIBRARY_PATH=/home/mic/tmpp/asap-textwrap/build/bin valgrind \
+	cat /tmp/sample-$i.txt | LD_LIBRARY_PATH=/home/mic/tmpp/asap-textwrap/build/bin valgrind \
 			     --tool=massif \
 			     --massif-out-file=mempeak-$i-$what_lib \
 			     ./use_$what_lib/a.out &>/dev/null

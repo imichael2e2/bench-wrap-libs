@@ -1,5 +1,5 @@
 
-cat /tmp/gpl-$1.txt | ./use_textwrap/target/release/use_textwrap &>/dev/null
+cat /tmp/sample-$1.txt | ./use_textwrap/a.out &>/dev/null
 
 if [[ ! $? -eq 0 ]]
 then
