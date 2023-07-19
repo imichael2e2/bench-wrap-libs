@@ -16,7 +16,7 @@ function bench_rtime() {
 
     for i in $(seq 1 $N_SAMPLE)
     do
-	sleep 1s
+	sleep 3s
 	alltimes_output=$({ time bash run_use_$what_lib.bash $i; } 2>&1)
 	echo "$alltimes_output" >>$realtimes_result
     done

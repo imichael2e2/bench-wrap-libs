@@ -4,9 +4,9 @@ version = 3
 
 [[package]]
 name = "bwrap"
-version = "0.1.0-beta6"
+version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c51f651b99bb3c35ac9201c0e1a8667422c20f8a901f241e22d5ea4b8ae60819"
+checksum = "bd8ab2727a4a903e4b19125bff29696add739fb11daf1045dd92e4d0e4612abc"
 dependencies = [
  "unicode-width",
 ]

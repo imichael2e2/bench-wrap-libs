@@ -15,7 +15,7 @@ function bench_mempeak() {
 
     for i in $(seq 1 $N_SAMPLE)
     do
-	sleep 1s;
+	sleep 3s;
 	cat /tmp/sample-$i.txt | LD_LIBRARY_PATH=/home/mic/tmpp/asap-textwrap/build/bin valgrind \
 			     --tool=massif \
 			     --massif-out-file=mempeak-$i-$what_lib \

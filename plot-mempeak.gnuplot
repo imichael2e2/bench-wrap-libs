@@ -1,9 +1,10 @@
-set terminal pngcairo font "SF Mono,12" fontscale 1.0 size 800, 600
+set terminal pngcairo font "Sans,13" fontscale 1.0 size 800, 600
 
 set output 'result-mempeak.png'
 
 set title "Memory Peak {/:*.5 (less is better)}"
-set title font "Helvetica,25"
+set title font "Serif,25"
+
 set key inside left 
 set key textcolor variable
 
