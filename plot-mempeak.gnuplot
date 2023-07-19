@@ -9,7 +9,7 @@ set key inside left
 set key textcolor variable
 
 set ylabel "Heap Peak(Byte)"
-set xlabel "Input Size(32768 * x Bytes)"
+set xlabel "Input Size(*32768 Bytes)"
 
 set format y "{%.1e}" 
 
