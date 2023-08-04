@@ -23,7 +23,8 @@ function bench_rtime() {
 }
 
 # corresponds to use_XXX
-bench_rtime "textwrap"
+# bench_rtime "textwrap"
 # bench_rtime "asap-textwrap"
-bench_rtime "textflowcpp"
-bench_rtime "bwrap_easy"
+# bench_rtime "textflowcpp"
+# bench_rtime "bwrap_easy"
+bench_rtime "javawordwrap"
