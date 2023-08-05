@@ -21,6 +21,10 @@ echo "compiling javawordwrap..."
 cd use_javawordwrap && mvn clean package --quiet
 cd ..
 
+echo "compiling gowordwrap..."
+cd use_gowordwrap && go build -o a.out
+cd ..
+
 
 echo "generating samples..."
 bash gen-sample-linear.bash
