@@ -13,7 +13,20 @@ set xlabel "Input Size(*32768 Bytes)"
 
 set format y "{%.1e}" 
 
+
 plot \
-'reslog-mempeak-use_bwrap_easy.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold bwrap} (Rust)", \
-'reslog-mempeak-use_textwrap.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textwrap} (Rust)", \
-'reslog-mempeak-use_textflowcpp.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textflowcpp}  (C++)"
+'reslog-mempeak-use_textflowcpp.log' using 1 with lines smooth bezier \
+linewidth 2 linecolor rgb "orange" \
+title "{/:Bold textflowcpp} (C++)", \
+ \
+'reslog-mempeak-use_textwrap.log' using 1 with lines smooth bezier \
+linewidth 2 linecolor rgb "royalblue" \
+title "{/:Bold textwrap} (Rust)", \
+ \
+'reslog-mempeak-use_bwrap_easy.log' using 1 with lines smooth bezier \
+linewidth 2 linecolor rgb "dark-violet" \
+title "{/:Bold bwrap} (Rust)", \
+# \
+# 'reslog-mempeak-use_javawordwrap.log' using 1 with lines smooth bezier \
+# linewidth 2 linecolor rgb "olive" \
+# title "{/:Bold javawordwrap} (Java)"
