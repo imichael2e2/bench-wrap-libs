@@ -2,19 +2,23 @@
 echo "compiling bwrap..."
 cd use_bwrap_easy && rm -f a.out && \
     cargo build --release --quiet
-ln -s target/release/use_bwrap_easy a.out 
+# ln -s target/release/use_bwrap_easy a.out 
 cd ..
 
 echo "compiling textwrap..."
 cd use_textwrap && rm -f a.out && \
     cargo build --release --quiet
-ln -s target/release/use_textwrap a.out 
+# ln -s target/release/use_textwrap a.out 
 cd ..
 
 echo "compiling textflowcpp..."
 # git clone --depth=1 https://github.com/catchorg/textflowcpp
 cd use_textflowcpp && rm -f a.out && \
     g++ -I/tmp/textflowcpp main.cc -O3
+cd ..
+
+echo "compiling javawordwrap..."
+cd use_javawordwrap && mvn clean package --quiet
 cd ..
 
 

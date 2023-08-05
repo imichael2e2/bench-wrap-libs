@@ -14,7 +14,6 @@ set xlabel "Input Size(*32768 Bytes)"
 set format y "{%.1e}" 
 
 plot \
-'mempeak-use_bwrap_easy.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold bwrap} (Rust)", \
-'mempeak-use_textwrap.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textwrap} (Rust)", \
-'mempeak-use_textflowcpp.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textflowcpp}  (C++)", \
-# 'mempeak-use_asap-textwrap.log' using 1 with lines smooth bezier linewidth 2 title "asap-textwrap (C++)"
+'reslog-mempeak-use_bwrap_easy.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold bwrap} (Rust)", \
+'reslog-mempeak-use_textwrap.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textwrap} (Rust)", \
+'reslog-mempeak-use_textflowcpp.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textflowcpp}  (C++)"

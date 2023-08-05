@@ -13,7 +13,6 @@ set xlabel "Input Size(*32768 Bytes)"
 
 
 plot \
-'rtime-use_bwrap_easy.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold bwrap} (Rust)", \
-'rtime-use_textwrap.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textwrap} (Rust)", \
-'rtime-use_textflowcpp.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textflowcpp} (C++)", \
-# 'rtime-use_asap-textwrap.log' using 1 with lines smooth bezier linewidth 2 title "asap-textwrap (C++)"
+'reslog-rtime-use_bwrap_easy.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold bwrap} (Rust)", \
+'reslog-rtime-use_textwrap.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textwrap} (Rust)", \
+'reslog-rtime-use_textflowcpp.log' using 1 with lines smooth bezier linewidth 2 title "{/:Bold textflowcpp} (C++)"
