@@ -17,6 +17,14 @@ set xlabel "Input Size(*32768 Bytes)"
 # javawordwrap: olive
 
 plot \
+'reslog-rtime-use_textflowcpp.log' using 1 with lines smooth bezier \
+linewidth 2 linecolor rgb "dark-pink" \
+title "{/:Bold textflowcpp} (C++)", \
+ \
+'reslog-rtime-use_gowordwrap.log' using 1 with lines smooth bezier \
+linewidth 2 linecolor rgb "green" \
+title "{/:Bold gowordwrap} (Go)", \
+ \
 'reslog-rtime-use_javawordwrap.log' using 1 with lines smooth bezier \
 linewidth 2 linecolor rgb "olives" \
 title "{/:Bold wordwrap} (Java)", \
@@ -28,10 +36,6 @@ title "{/:Bold textwrap} (Rust)", \
 'reslog-rtime-use_bwrap_easy.log' using 1 with lines smooth bezier \
 linewidth 2 linecolor rgb "dark-violet" \
 title "{/:Bold bwrap} (Rust)", \
-#  \
-# 'reslog-rtime-use_textflowcpp.log' using 1 with lines smooth bezier \
-# linewidth 2 linecolor rgb "dark-pink" \
-# title "{/:Bold textflowcpp} (C++)" \
 
 
 

@@ -1,5 +1,5 @@
 
-N_SAMPLE=35
+N_SAMPLE=10
 
 
 function bench_mempeak() {
@@ -32,4 +32,5 @@ function bench_mempeak() {
 bench_mempeak "textwrap"
 bench_mempeak "textflowcpp"
 bench_mempeak "bwrap_easy"
-# bench_mempeak "javawordwrap"
+# bench_mempeak "gowordwrap" # go does not use malloc/free
+# bench_mempeak "javawordwrap" # jvm use way too much memory

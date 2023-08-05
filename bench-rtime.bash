@@ -1,5 +1,5 @@
 
-N_SAMPLE=35
+N_SAMPLE=10
 
 
 function bench_rtime() {
@@ -28,3 +28,4 @@ bench_rtime "textwrap"
 bench_rtime "textflowcpp"
 bench_rtime "bwrap_easy"
 bench_rtime "javawordwrap"
+bench_rtime "gowordwrap"
