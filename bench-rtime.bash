@@ -1,5 +1,5 @@
 
-N_SAMPLE=50
+N_SAMPLE=35
 
 
 function bench_rtime() {

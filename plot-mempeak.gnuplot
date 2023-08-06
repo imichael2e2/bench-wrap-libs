@@ -20,21 +20,21 @@ set title "{/:Bold bwrap vs. textwrap}"
 plot \
 'reslog-mempeak-use_bwrap_easy.log' using 1 with lines smooth bezier \
 linewidth 2 linecolor rgb "dark-violet" \
-title "{/:Bold bwrap} (Rust)", \
+title "bwrap (Rust)", \
  \
 'reslog-mempeak-use_textwrap.log' using 1 with lines smooth bezier \
 linewidth 2 linecolor rgb "orange" \
-title "{/:Bold textwrap} (Rust)", \
+title "textwrap (Rust)", \
 
 set title "{/:Bold bwrap vs. textflowcpp}"
 
 plot \
 'reslog-mempeak-use_bwrap_easy.log' using 1 with lines smooth bezier \
 linewidth 2 linecolor rgb "dark-violet" \
-title "{/:Bold bwrap} (Rust)", \
+title "bwrap (Rust)", \
  \
 'reslog-mempeak-use_textflowcpp.log' using 1 with lines smooth bezier \
 linewidth 2 linecolor rgb "dark-pink" \
-title "{/:Bold textflowcpp} (C++)"
+title "textflowcpp (C++)"
 
 

@@ -14,7 +14,7 @@ cd use_textwrap && rm -f a.out && \
 cd ..
 
 echo "compiling textflowcpp..."
-# git clone --depth=1 https://github.com/catchorg/textflowcpp
+git clone --quiet --depth=1 https://github.com/catchorg/textflowcpp /tmp/textflowcpp
 cd use_textflowcpp && rm -f a.out && \
     g++ -I/tmp/textflowcpp main.cc -O3
 cd ..
