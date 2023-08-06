@@ -1,4 +1,6 @@
 
+echo START: $(date)
+
 echo "compiling bwrap..."
 cd use_bwrap_easy && rm -f a.out && \
     cargo build --release --quiet
@@ -25,9 +27,10 @@ echo "compiling gowordwrap..."
 cd use_gowordwrap && go build -o a.out
 cd ..
 
-
 echo "generating samples..."
 bash gen-sample-linear.bash
 
 bash bench-rtime.bash
 bash bench-mem.bash
+
+echo END: $(date)

@@ -7,8 +7,8 @@ set title font "Serif,16"
 set key inside left 
 set key textcolor variable
 
-set ylabel "Time(seconds)"
-set xlabel "Input(*32768 Bytes)"
+set ylabel "Time (seconds)"
+set xlabel "Input (*32768 Bytes)"
 
 
 # bwrap: dark-violet
