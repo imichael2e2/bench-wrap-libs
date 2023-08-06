@@ -1,5 +1,5 @@
 
-N_SAMPLE=10
+N_SAMPLE=3
 
 
 function bench_mempeak() {

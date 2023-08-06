@@ -8,7 +8,7 @@ set key inside left
 set key textcolor variable
 
 set ylabel "Time (seconds)"
-set xlabel "Input (*32768 Bytes)"
+set xlabel "Input (*512KBytes)"
 
 
 # bwrap: dark-violet

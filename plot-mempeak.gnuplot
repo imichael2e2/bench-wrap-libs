@@ -8,7 +8,7 @@ set key inside left
 set key textcolor variable
 
 set ylabel "Peak (Bytes)"
-set xlabel "Input (*32768 Bytes)"
+set xlabel "Input (*512KBytes)"
 
 # set format y "{%.1e}" 
 
