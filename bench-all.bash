@@ -4,13 +4,11 @@ echo START: $(date)
 echo "compiling bwrap..."
 cd use_bwrap_easy && rm -f a.out && \
     cargo build --release --quiet
-# ln -s target/release/use_bwrap_easy a.out 
 cd ..
 
 echo "compiling textwrap..."
 cd use_textwrap && rm -f a.out && \
     cargo build --release --quiet
-# ln -s target/release/use_textwrap a.out 
 cd ..
 
 echo "compiling textflowcpp..."
