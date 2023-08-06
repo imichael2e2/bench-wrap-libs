@@ -58,8 +58,8 @@ Below are the details of this benchmark:
 
 * Examples
 
-On a i5-3337u/8G machine, the benchmark takes about 20min, and we
-will get:
+On a i5-3337u/8G machine, the benchmark will take about 20min, and the
+result will be similar to:
 
 <img src="examples/result-rtime.png" width="500px">
 

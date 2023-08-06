@@ -1,10 +1,10 @@
-- [How to run](#orgc071526)
-  - [Prerequisites](#org3f181f1)
-- [About the benchmark](#orga70ca92)
-- [Examples](#orgeade053)
+- [How to run](#orge088b67)
+  - [Prerequisites](#orgc682f25)
+- [About the benchmark](#org8ad8a9b)
+- [Examples](#orgc1ad53a)
 
 
-<a id="orgc071526"></a>
+<a id="orge088b67"></a>
 
 # How to run
 
@@ -17,7 +17,7 @@ bash bench-all.bash
 ```
 
 
-<a id="org3f181f1"></a>
+<a id="orgc682f25"></a>
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ bash bench-all.bash
     8.  go
 
 
-<a id="orga70ca92"></a>
+<a id="org8ad8a9b"></a>
 
 # About the benchmark
 
@@ -56,11 +56,11 @@ Below are the details of this benchmark:
 4.  While all libraries are measured in "time elapsed" benchmark, not all will do so in "memory peak" benchmark. This is because their memory allocation mechanism, are completely different from the one used by system programming lang like C/C++ or Rust.
 
 
-<a id="orgeade053"></a>
+<a id="orgc1ad53a"></a>
 
 # Examples
 
-On a i5-3337u/8G machine, the benchmark takes about 20min, and we will get:
+On a i5-3337u/8G machine, the benchmark will take about 20min, and the result will be similar to:
 
 <img src="examples/result-rtime.png" width="500px">
 
