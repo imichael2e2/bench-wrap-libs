@@ -3,7 +3,6 @@
 *.#
 
 *.log
-*.png
 
 Cargo.lock
 *target*

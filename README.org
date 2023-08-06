@@ -2,7 +2,7 @@
 * How to run
 
 #+begin_src bash
-  git clone --depth=1 https://github.com/imichael2e2/bench-wrap-libs
+  git clone --depth=1 https://github.com/micl2e2/bench-wrap-libs
   cd bench-wrap-libs
 
   # start benchmark
@@ -34,10 +34,23 @@
    in 30 files of size ranging from about 30 KB to about 1 MB. 
    
 
-2. All libraries are assigned the *same task*: take samples from standard
+1. All libraries are assigned the *same task*: take samples from standard
    in, wrap them with an 80-width limit, then print out the result to
    standard out. 
 
-3. Although all libraries' results are distinct from each other, they
+2. Although all libraries' results are distinct from each other, they
    are *correct enough*, i.e., no lines exceed the 80-width limit.
+
+
+* Examples
+
+On a i5-3337u/8G machine, we got:
+
+<img src="examples/result-rtime.png" width="500px">
+
+
+<img src="examples/result-mempeak.png" width="500px">
+
+
+
 
