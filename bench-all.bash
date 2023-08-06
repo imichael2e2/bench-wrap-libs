@@ -33,4 +33,4 @@ bash gen-sample-linear.bash
 bash bench-rtime.bash
 bash bench-mem.bash
 
-echo END: $(date)
+echo END : $(date)
