@@ -2,7 +2,7 @@
 # del old
 rm -f /tmp/sample-*.txt
 
-for i in {1..50}
+for i in {1..10}
 do
-    cat /dev/random | tr -dc 'abcde[= =]' | head -c $((i*1024*100)) >/tmp/sample-$i.txt
+    cat /dev/random | tr -dc 'abcde[= =]' | head -c $((i*1024*128)) >/tmp/sample-$i.txt
 done
