@@ -1,10 +1,10 @@
-- [How to run](#org28bd7a6)
-  - [Prerequisites](#orgee8db15)
-- [About the benchmark](#org7d287df)
-- [Examples](#orgb5667a3)
+- [How to run](#orgc071526)
+  - [Prerequisites](#org3f181f1)
+- [About the benchmark](#orga70ca92)
+- [Examples](#orgeade053)
 
 
-<a id="org28bd7a6"></a>
+<a id="orgc071526"></a>
 
 # How to run
 
@@ -17,7 +17,7 @@ bash bench-all.bash
 ```
 
 
-<a id="orgee8db15"></a>
+<a id="org3f181f1"></a>
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ bash bench-all.bash
     8.  go
 
 
-<a id="org7d287df"></a>
+<a id="orga70ca92"></a>
 
 # About the benchmark
 
@@ -41,7 +41,7 @@ Note: if anyone finds out that, there is improper or unfair usage of any of sele
 
 Below are the details of this benchmark:
 
-1.  Samples' content looks like:
+1.  (**Random Samples**) Samples' content looks like:
     
     ```
     abaaebdd c a deeccadd cbcbedbaeadecbdbccbdbeeaaa bacecddd cb cdcabcdccdceecca cc aeebeaee bededdbddddad ae d bcaacccaba eccdc   cadc aac   eddedbada  babbd bbb bbbcdd aecd becc ab debb   daecbeddaedaaebaccba edd dac d  adba c ebba dc aeede   bcdde bed b eb ddbdaacbe bda   aa d
@@ -49,14 +49,14 @@ Below are the details of this benchmark:
     
     , which simulates an English article as close to reality as possible. They are **generated randomly** from the characters pool consisting of alphabets "abcde" and ASCII space " ", it results in 10 files of size ranging from 512KB to 5MB(the approximate size of plain-text version of the Bible).
 
-2.  All libraries are assigned the **same task**: take samples from standard in, wrap them with an 80-width limit, then print out the result to standard out.
+2.  (**Same Task**) All libraries are assigned the **same task**: take samples from standard in, wrap them with an 80-width limit, then print out the result to standard out.
 
-3.  Although all libraries' results are distinct from each other, they are **correct enough**, i.e., no lines exceed the 80-width limit.
+3.  (**Correct Enough**) Although all libraries' results are distinct from each other, they are **correct enough**, i.e., no lines exceed the 80-width limit.
 
 4.  While all libraries are measured in "time elapsed" benchmark, not all will do so in "memory peak" benchmark. This is because their memory allocation mechanism, are completely different from the one used by system programming lang like C/C++ or Rust.
 
 
-<a id="orgb5667a3"></a>
+<a id="orgeade053"></a>
 
 # Examples
 

@@ -30,7 +30,7 @@ benchmark, please feel free to [[https://github.com/micl2e2/bench-wrap-libs/issu
 
 Below are the details of this benchmark:
 
-1. Samples' content looks like:
+1. (*Random Samples*) Samples' content looks like:
    #+begin_src
      abaaebdd c a deeccadd cbcbedbaeadecbdbccbdbeeaaa bacecddd cb cdcabcdccdceecca cc aeebeaee bededdbddddad ae d bcaacccaba eccdc   cadc aac   eddedbada  babbd bbb bbbcdd aecd becc ab debb   daecbeddaedaaebaccba edd dac d  adba c ebba dc aeede   bcdde bed b eb ddbdaacbe bda   aa d
    #+end_src
@@ -41,11 +41,13 @@ Below are the details of this benchmark:
    in 10 files of size ranging from 512KB to 5MB(the approximate size
    of plain-text version of the Bible). 
    
-2. All libraries are assigned the *same task*: take samples from standard
+2. (*Same Task*) All libraries are assigned the *same task*: take
+   samples from standard 
    in, wrap them with an 80-width limit, then print out the result to
    standard out. 
 
-3. Although all libraries' results are distinct from each other, they
+3. (*Correct Enough*) Although all libraries' results are distinct
+   from each other, they 
    are *correct enough*, i.e., no lines exceed the 80-width limit.
 
 4. While all libraries are measured in "time elapsed" benchmark,
